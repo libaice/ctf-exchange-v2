@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.34;
 
-import { Collateral, USDCe, CollateralSetup } from "@ctf-exchange-v2/src/test/dev/CollateralSetup.sol";
-import { Deployer } from "@ctf-exchange-v2/src/test/dev/util/Deployer.sol";
-import { TestHelper } from "@ctf-exchange-v2/src/test/dev/TestHelper.sol";
+import { Collateral, USDCe, CollateralSetup } from "@ctf-exchange-v2/test/dev/CollateralSetup.sol";
+import { Deployer } from "@ctf-exchange-v2/test/dev/util/Deployer.sol";
+import { TestHelper } from "@ctf-exchange-v2/test/dev/TestHelper.sol";
 import { CTFHelpers } from "@ctf-exchange-v2/src/adapters/libraries/CTFHelpers.sol";
 // TODO: NegRiskAdapterSetUp needs to be created - requires NegRiskAdapter artifact
-import { NegRiskAdapterSetUp } from "@ctf-exchange-v2/src/test/dev/NegRiskAdapterSetUp.sol";
+import { NegRiskAdapterSetUp } from "@ctf-exchange-v2/test/dev/NegRiskAdapterSetUp.sol";
 import { IConditionalTokens } from "@ctf-exchange-v2/src/adapters/interfaces/IConditionalTokens.sol";
 import { INegRiskAdapter } from "@ctf-exchange-v2/src/adapters/interfaces/INegRiskAdapter.sol";
 

@@ -5,7 +5,7 @@ import { SafeTransferLib } from "@solady/src/utils/SafeTransferLib.sol";
 import { Initializable } from "@solady/src/utils/Initializable.sol";
 import { Ownable } from "@solady/src/auth/Ownable.sol";
 
-import { TestHelper } from "@ctf-exchange-v2/src/test/dev/TestHelper.sol";
+import { TestHelper } from "@ctf-exchange-v2/test/dev/TestHelper.sol";
 
 import {
     Collateral,
@@ -13,7 +13,7 @@ import {
     USDC,
     USDCe,
     CollateralSetup
-} from "@ctf-exchange-v2/src/test/dev/CollateralSetup.sol";
+} from "@ctf-exchange-v2/test/dev/CollateralSetup.sol";
 import { CollateralErrors } from "@ctf-exchange-v2/src/collateral/abstract/CollateralErrors.sol";
 import { CollateralTokenEvents } from "@ctf-exchange-v2/src/collateral/CollateralToken.sol";
 import { ICollateralTokenCallbacks } from "@ctf-exchange-v2/src/collateral/interfaces/ICollateralTokenCallbacks.sol";

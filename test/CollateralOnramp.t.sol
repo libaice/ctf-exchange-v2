@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.34;
 
-import { TestHelper } from "@ctf-exchange-v2/src/test/dev/TestHelper.sol";
+import { TestHelper } from "@ctf-exchange-v2/test/dev/TestHelper.sol";
 
 import { CollateralErrors } from "@ctf-exchange-v2/src/collateral/abstract/CollateralErrors.sol";
-import { Collateral, CollateralSetup, USDC, USDCe } from "@ctf-exchange-v2/src/test/dev/CollateralSetup.sol";
+import { Collateral, CollateralSetup, USDC, USDCe } from "@ctf-exchange-v2/test/dev/CollateralSetup.sol";
 
 contract CollateralOnrampTest is TestHelper {
     error Unauthorized();

@@ -7,9 +7,9 @@ import { ERC1155 } from "@solady/src/tokens/ERC1155.sol";
 
 import { CTFExchange } from "@ctf-exchange-v2/src/exchange/CTFExchange.sol";
 
-import { Collateral, CollateralSetup } from "@ctf-exchange-v2/src/test/dev/CollateralSetup.sol";
-import { USDCe } from "@ctf-exchange-v2/src/test/dev/mocks/USDCe.sol";
-import { Deployer } from "@ctf-exchange-v2/src/test/dev/util/Deployer.sol";
+import { Collateral, CollateralSetup } from "@ctf-exchange-v2/test/dev/CollateralSetup.sol";
+import { USDCe } from "@ctf-exchange-v2/test/dev/mocks/USDCe.sol";
+import { Deployer } from "@ctf-exchange-v2/test/dev/util/Deployer.sol";
 import { INegRiskAdapter } from "@ctf-exchange-v2/src/adapters/interfaces/INegRiskAdapter.sol";
 import { CTFHelpers } from "@ctf-exchange-v2/src/adapters/libraries/CTFHelpers.sol";
 import { NegRiskCtfCollateralAdapter } from "@ctf-exchange-v2/src/adapters/NegRiskCtfCollateralAdapter.sol";

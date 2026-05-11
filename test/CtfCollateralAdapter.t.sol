@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.34;
 
-import { Deployer } from "@ctf-exchange-v2/src/test/dev/util/Deployer.sol";
-import { TestHelper } from "@ctf-exchange-v2/src/test/dev/TestHelper.sol";
+import { Deployer } from "@ctf-exchange-v2/test/dev/util/Deployer.sol";
+import { TestHelper } from "@ctf-exchange-v2/test/dev/TestHelper.sol";
 import { IConditionalTokens } from "@ctf-exchange-v2/src/adapters/interfaces/IConditionalTokens.sol";
 import { CTHelpers } from "@ctf-exchange-v2/src/adapters/libraries/CTHelpers.sol";
 import { CTFHelpers } from "@ctf-exchange-v2/src/adapters/libraries/CTFHelpers.sol";
 
-import { Collateral, USDCe, CollateralSetup } from "@ctf-exchange-v2/src/test/dev/CollateralSetup.sol";
+import { Collateral, USDCe, CollateralSetup } from "@ctf-exchange-v2/test/dev/CollateralSetup.sol";
 
 import { CollateralErrors } from "@ctf-exchange-v2/src/collateral/abstract/CollateralErrors.sol";
 import { CtfCollateralAdapter } from "@ctf-exchange-v2/src/adapters/CtfCollateralAdapter.sol";

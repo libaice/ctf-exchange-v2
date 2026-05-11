@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.34;
 
-import { vm } from "@ctf-exchange-v2/src/test/dev/util/vm.sol";
-import { Deployer } from "@ctf-exchange-v2/src/test/dev/util/Deployer.sol";
+import { vm } from "@ctf-exchange-v2/test/dev/util/vm.sol";
+import { Deployer } from "@ctf-exchange-v2/test/dev/util/Deployer.sol";
 import { IConditionalTokens } from "@ctf-exchange-v2/src/adapters/interfaces/IConditionalTokens.sol";
 import { INegRiskAdapter } from "@ctf-exchange-v2/src/adapters/interfaces/INegRiskAdapter.sol";
 

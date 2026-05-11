@@ -4,6 +4,7 @@ remappings = [
     "@solady/=lib/solady/",
     "@forge-std/=lib/forge-std/",
     "@ctf-exchange-v2/src/=src/",
+    "@ctf-exchange-v2/test/=test/",
 ]
 ffi = true
 gas_reports = ["*"]

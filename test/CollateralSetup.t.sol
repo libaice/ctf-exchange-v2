@@ -3,8 +3,8 @@ pragma solidity 0.8.34;
 
 import { ERC20 } from "@solady/src/tokens/ERC20.sol";
 
-import { TestHelper } from "@ctf-exchange-v2/src/test/dev/TestHelper.sol";
-import { Collateral, CollateralSetup } from "@ctf-exchange-v2/src/test/dev/CollateralSetup.sol";
+import { TestHelper } from "@ctf-exchange-v2/test/dev/TestHelper.sol";
+import { Collateral, CollateralSetup } from "@ctf-exchange-v2/test/dev/CollateralSetup.sol";
 
 contract CollateralSetUp_Test is TestHelper {
     address admin = alice;
