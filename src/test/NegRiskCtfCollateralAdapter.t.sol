@@ -15,6 +15,7 @@ import { NegRiskCtfCollateralAdapter } from "@ctf-exchange-v2/src/adapters/NegRi
 
 contract NegRiskCtfCollateralAdapterTest is TestHelper {
     error Unauthorized();
+
     address admin = alice;
     address owner = alice;
     address oracle = carly;

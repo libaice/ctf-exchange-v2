@@ -7,9 +7,8 @@ import { Vm } from "@forge-std/src/Vm.sol";
 import { PolySafeLib } from "@ctf-exchange-v2/src/exchange/libraries/PolySafeLib.sol";
 
 contract MockSafeImplementation {
-    // Intentionally empty: acts as a stand-in for the real Gnosis Safe master copy.
-
-    }
+// Intentionally empty: acts as a stand-in for the real Gnosis Safe master copy.
+}
 
 contract PolySafeFactoryHarness {
     error DeploymentFailed();
@@ -138,4 +137,3 @@ contract PolySafeLibTest is Test {
         assertTrue(sawDeploy, "deployment log missing");
     }
 }
-

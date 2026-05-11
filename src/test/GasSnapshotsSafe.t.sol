@@ -262,9 +262,8 @@ contract GasSnapshotsSafe is BaseExchangeTest {
 
         // Makers: carla's safe buys NO
         for (uint256 i = 0; i < numMakers; i++) {
-            makerOrders[i] = _createAndSignSafeOrderWithSalt(
-                carlaPK, carlaSafe, no, usdcPerMaker, tokensPerMaker, Side.BUY, i + 100
-            );
+            makerOrders[i] =
+                _createAndSignSafeOrderWithSalt(carlaPK, carlaSafe, no, usdcPerMaker, tokensPerMaker, Side.BUY, i + 100);
             fillAmounts[i] = usdcPerMaker;
             feeAmounts[i] = 0;
         }

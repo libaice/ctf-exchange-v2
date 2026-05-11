@@ -38,9 +38,8 @@ library CollateralSetup {
 
         collateral.vault = address(new CollateralVault(_owner));
 
-        address collateralImplementation = address(
-            new CollateralToken(address(collateral.usdc), address(collateral.usdce), address(collateral.vault))
-        );
+        address collateralImplementation =
+            address(new CollateralToken(address(collateral.usdc), address(collateral.usdce), address(collateral.vault)));
 
         address collateralProxy = LibClone.deployERC1967(collateralImplementation);
 
@@ -61,10 +60,12 @@ library CollateralSetup {
         vm.stopPrank();
 
         vm.startPrank(_owner);
-        CollateralVault(collateral.vault)
-            .approve(address(collateral.usdc), address(collateral.token), type(uint256).max);
-        CollateralVault(collateral.vault)
-            .approve(address(collateral.usdce), address(collateral.token), type(uint256).max);
+        CollateralVault(collateral.vault).approve(
+            address(collateral.usdc), address(collateral.token), type(uint256).max
+        );
+        CollateralVault(collateral.vault).approve(
+            address(collateral.usdce), address(collateral.token), type(uint256).max
+        );
         vm.stopPrank();
 
         return collateral;

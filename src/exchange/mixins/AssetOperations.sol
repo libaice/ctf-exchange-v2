@@ -39,14 +39,16 @@ abstract contract AssetOperations is Assets, IAssetOperations {
 
     function _mint(bytes32 conditionId, uint256 amount) internal override {
         uint256[] memory partition = _getPartition();
-        IConditionalTokens(getOutcomeTokenFactory())
-            .splitPosition(getCollateral(), PARENT_COLLECTION_ID, conditionId, partition, amount);
+        IConditionalTokens(getOutcomeTokenFactory()).splitPosition(
+            getCollateral(), PARENT_COLLECTION_ID, conditionId, partition, amount
+        );
     }
 
     function _merge(bytes32 conditionId, uint256 amount) internal override {
         uint256[] memory partition = _getPartition();
-        IConditionalTokens(getOutcomeTokenFactory())
-            .mergePositions(getCollateral(), PARENT_COLLECTION_ID, conditionId, partition, amount);
+        IConditionalTokens(getOutcomeTokenFactory()).mergePositions(
+            getCollateral(), PARENT_COLLECTION_ID, conditionId, partition, amount
+        );
     }
 
     /// @dev Returns the binary partition [1, 2] for CTF operations

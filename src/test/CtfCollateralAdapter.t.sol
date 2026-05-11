@@ -14,6 +14,7 @@ import { CtfCollateralAdapter } from "@ctf-exchange-v2/src/adapters/CtfCollatera
 
 contract CtfCollateralAdapterTest is TestHelper {
     error Unauthorized();
+
     address admin = alice;
     address oracle = carly;
 

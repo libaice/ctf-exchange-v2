@@ -51,9 +51,7 @@ contract PermissionedRampTest is TestHelper {
     ) internal view returns (bytes memory) {
         bytes32 structHash = keccak256(
             abi.encode(
-                keccak256(
-                    "Wrap(address sender,address asset,address to,uint256 amount,uint256 nonce,uint256 deadline)"
-                ),
+                keccak256("Wrap(address sender,address asset,address to,uint256 amount,uint256 nonce,uint256 deadline)"),
                 _sender,
                 _asset,
                 _to,

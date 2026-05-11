@@ -410,12 +410,12 @@ abstract contract Trading is Hashing, AssetOperations, Events, Fees, UserPausabl
             if (matchType == MatchType.MINT) {
                 unchecked {
                     totalMintAmount += prepared[i].takingAmount; // safety: token amounts can't realistically overflow
-                    // uint256
+                        // uint256
                 }
             } else if (matchType == MatchType.MERGE) {
                 unchecked {
                     totalMergeAmount += prepared[i].makingAmount; // safety: token amounts can't realistically overflow
-                    // uint256
+                        // uint256
                 }
             }
             unchecked {
@@ -620,7 +620,10 @@ abstract contract Trading is Hashing, AssetOperations, Events, Fees, UserPausabl
     }
 
     /// @notice Validates that all order tokenIds are valid positions for the given conditionId
-    function _validateTokenIds(bytes32 conditionId, Order memory takerOrder, Order[] memory makerOrders) internal view {
+    function _validateTokenIds(bytes32 conditionId, Order memory takerOrder, Order[] memory makerOrders)
+        internal
+        view
+    {
         address col = getCtfCollateral();
         uint256 pos1 = CTHelpers.getPositionId(col, CTHelpers.getCollectionId(bytes32(0), conditionId, 1));
         uint256 pos2 = CTHelpers.getPositionId(col, CTHelpers.getCollectionId(bytes32(0), conditionId, 2));
@@ -637,7 +640,10 @@ abstract contract Trading is Hashing, AssetOperations, Events, Fees, UserPausabl
     /// @notice Ensures the taker and maker orders can be matched against each other
     /// @param takerOrder   - The taker order
     /// @param makerOrder   - The maker order
-    function _validateOrdersMatch(Order memory takerOrder, Order memory makerOrder, MatchType matchType) internal pure {
+    function _validateOrdersMatch(Order memory takerOrder, Order memory makerOrder, MatchType matchType)
+        internal
+        pure
+    {
         if (matchType == MatchType.COMPLEMENTARY) {
             require(takerOrder.tokenId == makerOrder.tokenId, MismatchedTokenIds());
 

@@ -23,4 +23,3 @@ abstract contract IUserPausable is IUserPausableEE {
 
     function unpauseUser() external virtual;
 }
-
